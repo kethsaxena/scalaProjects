@@ -11,9 +11,9 @@ object Driver {
         {
             scala.util.Properties.envOrElse("runMode", "prod") 
             match {
-                case DEV => MySQLDriver
-                case SIT => MySQLDriver
-                case SAT => MySQLDriver
+                case DEV =>  MySQLDriver
+                case SIT =>  MySQLDriver
+                case SAT =>  MySQLDriver
                 case PROD => MySQLDriver
                 }
         }
